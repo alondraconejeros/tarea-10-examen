@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSMIC STUDIO</title>
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body>
+    <header class="portada">
+
+
+        <div class="portitulo">
+            <h1 class="titulo">COSMIC STUDIO</h1>
+            <h3>DISEÑO Y MAQUETACIÓN WEB</h3>
+        </div>
+
+        <a href="#cotizar" class="cotizar">
+            Cotizar Proyecto
+            <i class='bx bx-chevron-down'></i>
+        </a>
+
+        <div class="rrss">
+            
+            <span>Contáctanos</span>
+
+            <ul>
+                <li>
+                    <a href="https://wa.me/56971932379" class="icons" target="_blank">
+                        <i class="ri-whatsapp-fill"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://github.com" class="icons" target="_blank">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.instagram.com/impatonski/" class="icons" target="_blank">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <section class="contacto" id="cotizar">
+
+        <div class="des">
+            <h2>COTIZAR WEB</h2>
+            <p>
+                Recuerda que mientras más específico seas en tu explicación, el presupuesto tendrá un costo más acotado a tus necesidades y te lo podré enviar más rápido
+            </p>
+        </div>
+
+        <form class="formulario" action="enviar.php" method="post">
+
+            <div>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div>
+                <label for="telefono">Whatsapp</label>
+                <input id="telefono" type="tel" name="telefono" placeholder="Tu wsp con código de área" required>
+            </div>
+
+            <div>
+                <label for="Email">Email</label>
+                <input id="Email" type="mail" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+
+            <div>
+                <label for="selecciona">Selcciona el tipo de Web</label>
+                <select name="tipoweb" id="selecciona">
+                    <option value="onepage" selected>One Page</option>
+                    <option value="corporativa">Corporativa</option>
+                    <option value="ecommerce">E-Commerce</option>
+                    <option value="elearning">E-Learning</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="mensaje">Mensajes</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Hablame sobre las secciones de tu página"></textarea>
+            </div>
+
+            <div>
+                <label for="boceto">Sube un boceto de tu idea</label>
+                <input type="file" name="boceto">
+            </div>
+
+            <input type="submit" value="Cotizar">
+
+        </form>
+
+    </section>
+</body>
+</html>
